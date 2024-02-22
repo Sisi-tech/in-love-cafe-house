@@ -8,6 +8,8 @@ import SignUp from './SignUp.jsx';
 import Logo from './assets/cafeLogo.png';
 import HotCoffee from './Menu/HotCoffee.jsx';
 import IcedCoffee from './Menu/IcedCoffee.jsx';
+import Dessert from './Menu/Dessert.jsx';
+import Brunch from './Menu/Brunch.jsx';
 
 
 function App() {
@@ -34,9 +36,11 @@ function App() {
           </Link>
           {showMenuOption && (
             <div className='absolute top-full left-0 bg-orange-100 text-black text-base rounded-md mt-1'>
-              <Link to='/hot_coffee' className='block py-2 px-4 hover:bg-orange-200'>Hot Coffee</Link>
-              <Link to='/iced_coffee' className='block py-2 px-4 hover:bg-orange-200'>Iced Coffee</Link>
-              <Link to='/menu' className='block py-2 px-4 hover:bg-orange-200'>All</Link>
+              <Link to='/hot_coffee' className='block py-1 px-3 hover:bg-orange-200'>Hot Coffee</Link>
+              <Link to='/iced_coffee' className='block py-1 px-3 hover:bg-orange-200'>Iced Coffee</Link>
+              <Link to='/dessert' className='block py-1 px-3 hover:bg-orange-200'>Dessert</Link>
+              <Link to='/brunch' className='block py-1 px-3 hover:bg-orange-200'>Brunch</Link>
+              <Link to='/menu' className='block py-1 px-3 hover:bg-orange-200'>All</Link>
             </div>
           )}
         </div>
@@ -52,6 +56,8 @@ function App() {
         <Route path='/sign_up' element={<SignUp />}></Route>
         <Route path='/hot_coffee' element={<HotCoffee />}></Route>
         <Route path='/iced_coffee' element={<IcedCoffee />}></Route>
+        <Route path='/dessert' element={<Dessert />}></Route>
+        <Route path='/brunch' element={<Brunch />}></Route>
       </Routes>
     </div>
     </Router>
