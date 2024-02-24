@@ -5,7 +5,7 @@ import IcedCoffee from './IcedCoffee';
 
 export default function Menu() {
     return (
-        <div>
+        <div className='flex flex-col justify-center align-center'>
             <HotCoffee />
             <IcedCoffee />
             <Dessert />

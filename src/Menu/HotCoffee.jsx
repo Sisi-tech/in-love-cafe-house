@@ -21,7 +21,7 @@ export default function HotCoffee() {
     console.log('Loading state - Hot Coffee:', loadingHot);
 
     if (loadingHot) {
-        return <p>Loading...</p>;
+        return <p className='text-center text-2xl'>Loading...</p>;
     }
 
     return (

@@ -20,7 +20,7 @@ export default function IcedCoffee() {
     console.log('Loading state - Iced Coffee:', loadingIced);
 
     if (loadingIced) {
-        return <p>Loading...</p>;
+        return <p className='text-center text-2xl'>Loading...</p>;
     }
 
     return (
