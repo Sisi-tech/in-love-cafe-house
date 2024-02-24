@@ -1,4 +1,6 @@
 import { useState, useEffect } from 'react';
+import GoBackToTop from './BackToTop';
+
 
 export default function IcedCoffee() {
     const [icedCoffee, setIcedCoffee] = useState({});
@@ -45,6 +47,7 @@ export default function IcedCoffee() {
                 })}
             </div>
             </section>
+            <GoBackToTop />
         </div>
     );
 }

@@ -1,3 +1,6 @@
+import GoBackToTop from "./BackToTop"
+
+
 const brunch = [
     {
         id: 1,
@@ -93,11 +96,10 @@ export default function Brunch() {
                 {
                     brunch.map((item) => {
                         return (
-                            <div className="flex flex-col justify-center items-center bg-orange-50 w-[500px] m-16 p-8 rounded-md container transition-transform duration-300 hover:scale-105">
+                            <div key={item.id} className="flex flex-col justify-center items-center bg-orange-50 w-[500px] m-16 p-8 rounded-md container transition-transform duration-300 hover:scale-105">
                                 <img 
                                     src={item.image} 
                                     alt={item.name} 
-                                    key={item.id} 
                                     className="w-[460px] h-auto rounded-md shadow-md shadow-orange-300"
                                 />
                                 <div className="flex w-full text-xl pt-4 pb-2 pl-14 gap-10">
@@ -109,6 +111,7 @@ export default function Brunch() {
                     })
                 }
             </div>
+            <GoBackToTop />
         </div>
     )
 };

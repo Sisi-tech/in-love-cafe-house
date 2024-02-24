@@ -1,3 +1,5 @@
+import GoBackToTop from "./BackToTop"
+
 
 const desserts = [
     {
@@ -178,11 +180,10 @@ export default function Dessert() {
                 {
                     desserts.map((cake) => {
                         return (
-                            <div className="flex flex-col items-center bg-orange-50 m-12 p-8 rounded-md cake_container transition-transform duration-300 hover:scale-105">
+                            <div key={cake.id} className="flex flex-col items-center bg-orange-50 m-12 p-8 rounded-md cake_container transition-transform duration-300 hover:scale-105">
                                 <img 
                                     src={cake.image} 
                                     alt={cake.name} 
-                                    key={cake.id} 
                                     className="w-[460px] h-auto rounded-md shadow-md shadow-orange-300"
                                 />
                                 <div className="flex w-full text-xl pt-4 pb-2 pl-8 gap-10">
@@ -194,6 +195,7 @@ export default function Dessert() {
                     })
                 }
             </div>
+            <GoBackToTop />
         </div>
     )
 };

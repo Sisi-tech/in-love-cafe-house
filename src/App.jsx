@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import { FaShoppingCart, FaUserPlus } from 'react-icons/fa';
 import Home from './Home.jsx';
 import Menu from './Menu/Menu.jsx';
 import Reservation from './Reservation.jsx';
@@ -25,9 +26,15 @@ function App() {
     <div className='w-full h-full flex flex-col'>
       <Router>
         <div className='w-full flex flex-col justify-center items-center'>
-        <div className='flex justify-center items-center gap-4 sm:gap-10 pb-6 pt-2 '>
-          <img src={Logo} alt='logo' className='w-40 rounded-full shadow-md shadow-orange-300' />
+        <div className='flex justify-between items-center gap-4 sm:gap-10 pb-6 pt-2 '>
+          <img src={Logo} alt='logo' className='w-28 md:w-40 rounded-full shadow-md shadow-orange-300' />
           <h2 className='text-3xl md:text-4xl font-semibold font-serif text-orange-900'>In Love Cafe House</h2>
+            <button type="button" className='absolute top-0 right-40 hidden sm:block'>
+              <FaUserPlus className='lg:text-4xl text-3xl text-orange-900 cursor-pointer lg:mt-14 lg:mr-30 mt-6 mr-6'/>
+            </button>
+            <button type="button" className='absolute top-0 right-0' >
+              <FaShoppingCart className='lg:text-4xl text-3xl text-orange-900 cursor-pointer lg:mt-14 lg:mr-20 mt-6 mr-6'/>
+            </button>
         </div>
         <nav className='flex h-12 w-5/6 sm:w-4/5 p-2 text-xl md:text-3xl bg-orange-950 justify-center text-gray-50 gap-4 sm:gap-4 md:gap-16 mb-10 rounded-2xl'>
           <Link to='/'>Home</Link>
