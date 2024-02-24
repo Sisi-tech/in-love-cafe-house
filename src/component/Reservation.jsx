@@ -1,4 +1,4 @@
-import myVideo from './assets/cafeVideo.mp4';
+import myVideo from '../assets/cafeVideo.mp4';
 
 export default function Reservation() {
     return (

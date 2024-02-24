@@ -1,61 +1,68 @@
 import GoBackToTop from "./BackToTop"
-
+import blueberryCake from '../assets/dessert/blueberry.jpg';
+import chocolateCake from '../assets/dessert/ChocolateCake.jpg';
+import bisquit from '../assets/dessert/bisquit.jpg';
+import brownie from '../assets/dessert/brownie.jpg';
+import bostonCheeseCake from '../assets/dessert/BostonCheeseCake.jpg';
+import coffeeCake from '../assets/dessert/CoffeeCake.jpg';
+import cheeseCake from '../assets/dessert/cheesecake.jpg';
+import tart from '../assets/dessert/strawberriesTart.jpg';
 
 const desserts = [
     {
         id: 1,
         name: "Blueberry Cake",
         description: "",
-        image: "src/assets/dessert/blueberry.jpg",
+        image: `${blueberryCake}`,
         price: 6.99
     },
     {
         id: 2,
         name: "Chocolate Cake",
         description: "",
-        image: "src/assets/dessert/ChocolateCake.jpg",
+        image: `${chocolateCake}`,
         price: 6.99
     },
     {
         id: 3,
         name: "Bisquit",
         description: "",
-        image: "src/assets/dessert/Bisquit.jpg",
+        image: `${bisquit}`,
         price: 6.99
     },
     {
         id: 4,
         name: "Brownie",
         description: "",
-        image: "src/assets/dessert/Brownie.jpg",
+        image: `${brownie}`,
         price: 6.99
     },
     {
         id: 5,
         name: "Boston CheeseCake",
         description: "",
-        image: "src/assets/dessert/BostonCheeseCake.jpg",
+        image: `${bostonCheeseCake}`,
         price: 7.99
     },
     {
         id: 6,
         name: "Coffee Cake",
         description: "",
-        image: "src/assets/dessert/CoffeeCake.jpg",
+        image: `${coffeeCake}`,
         price: 7.99
     },
     {
         id: 7,
         name: "Cheesecake",
         description: "",
-        image: "src/assets/dessert/Cheesecake.jpg",
+        image: `${cheeseCake}`,
         price: 7.99
     },
     {
         id: 8,
         name: "Strawberries Tart",
         description: "",
-        image: "src/assets/dessert/strawberriesTart.jpg",
+        image: `${tart}`,
         price: 7.99
     },
     {

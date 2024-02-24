@@ -1,11 +1,11 @@
 import { useState } from 'react';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import { FaShoppingCart, FaUserPlus } from 'react-icons/fa';
-import Home from './Home.jsx';
+import Home from './component/Home.jsx';
 import Menu from './Menu/Menu.jsx';
-import Reservation from './Reservation.jsx';
-import Contact from './Contact.jsx';
-import SignUp from './SignUp.jsx';
+import Reservation from './component/Reservation.jsx';
+import Contact from './component/Contact.jsx';
+import SignUp from './component/SignUp.jsx';
 import Logo from './assets/cafeLogo.png';
 import HotCoffee from './Menu/HotCoffee.jsx';
 import IcedCoffee from './Menu/IcedCoffee.jsx';

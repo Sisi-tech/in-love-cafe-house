@@ -1,12 +1,13 @@
 import { FaLinkedin, FaInstagram, FaFacebook } from 'react-icons/fa';
 import {HiOutlineMail} from 'react-icons/hi';
+import makeCoffeeVideo from '../assets/cafeHouse.mp4';
 
 
 export default function Contact() {
     return (
         <div className="flex flex-col w-4/5 items-center justify-center bg-orange-100 pt-10 pb-20">
             <video autoPlay loop muted className="w-3/5 rounded-md">
-                <source src="src/assets/cafeHouse.mp4" type="video/mp4" />
+                <source src={makeCoffeeVideo} type="video/mp4" />
             </video>
             <div className="border border-orange-950 w-4/5 m-10"></div>
             <div>
