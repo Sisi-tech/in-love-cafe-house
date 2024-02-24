@@ -51,8 +51,8 @@ function SignUp() {
     };
 
     return (
-        <div className='container w-full h-full flex justify-center text-xl '>
-            <form onSubmit={handleSubmit} className='pt-8 border border-gray-300 p-20 w-full m-10 ml-60 mr-60'>
+        <div className='w-4/5 h-full flex justify-center text-xl bg-orange-100'>
+            <form onSubmit={handleSubmit} className='pt-8 border border-gray-300 bg-white p-20 w-full m-10 ml-60 mr-60'>
                 <fieldset>
                     <h2 className='pb-6 pt-6 text-4xl font-bold'>Sign Up</h2>
                     <div className='field flex flex-col pb-6 gap-2'>

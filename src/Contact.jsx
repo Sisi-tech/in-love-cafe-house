@@ -4,7 +4,7 @@ import {HiOutlineMail} from 'react-icons/hi';
 
 export default function Contact() {
     return (
-        <div className="flex flex-col items-center justify-center bg-orange-100 pt-10 pb-20">
+        <div className="flex flex-col w-4/5 items-center justify-center bg-orange-100 pt-10 pb-20">
             <video autoPlay loop muted className="w-3/5 rounded-md">
                 <source src="src/assets/cafeHouse.mp4" type="video/mp4" />
             </video>
